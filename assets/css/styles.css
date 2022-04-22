@@ -1,0 +1,27 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+#navegacion a{
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+
+/* Hero Section */
+
+#home {
+  background-image: url("https://i.ibb.co/VYbyM41/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand{
+    width: 200px;
+  }
+}
+
+
+
+
