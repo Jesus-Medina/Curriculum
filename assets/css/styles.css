@@ -26,7 +26,24 @@ body {
   min-height: 100vh;
 }
 
+#presentacion h1 {
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px rgba(255, 255, 255, 0.685), 0 0 20px #ffe818, 0 0 30px #000000, 0 0 40px #ff7818, 0 0 55px #ff18183a, 0 0 75px #000000;
+  color: #252525;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8vh;
+  font-weight: bolder;
+}
+
+#presentacion h2 {
+  color: #ffffff;
+  text-shadow: 0 -1px 4px rgb(0, 0, 0), 0 -2px 100px rgb(0, 0, 0), 0 -10px 20px #000000, 0 -18px 40px rgb(0, 0, 0);
+  color: #ffffff;
+}
+
 /* ---------------------- */
+
 
 @media (max-width: 1200px) {
   #about-me-description {
@@ -34,8 +51,9 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #hi-im {
     margin-top: 1em;
   }
 }
+
