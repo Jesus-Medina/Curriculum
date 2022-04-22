@@ -23,16 +23,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-#nombre {
-  color: goldenrod;
+  min-height: 100vh;
 }
 
 /* ---------------------- */
 
-@media all and (max-width: 1200px) {
+@media (max-width: 1200px) {
   #about-me-description {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  #hi-im {
+    margin-top: 1em;
   }
 }
