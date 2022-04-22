@@ -1,5 +1,11 @@
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* SECCION DE LA NAVBAR */
+
+#navegacion > a:hover {
+  color: goldenrod;
 }
 
 #navegacion a{
@@ -7,7 +13,10 @@ body {
   font-size: 1.4rem;
 }
 
-/* Hero Section */
+/* -------------------------- */
+
+
+/* SECCION DEL HOME */
 
 #home {
   background-image: url("https://i.ibb.co/VYbyM41/bg.jpg");
@@ -16,17 +25,10 @@ body {
   background-position: center;
 }
 
-@media (max-width: 768px) {
-  .navbar-brand{
-    width: 200px;
-  }
-}
+/* ---------------------- */
 
-@media all and (max-width: 850px) {
+@media all and (max-width: 1200px) {
   #about-me-description {
     flex-wrap: wrap;
   }
 }
-
-
-
