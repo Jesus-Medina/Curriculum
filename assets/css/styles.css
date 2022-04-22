@@ -25,6 +25,10 @@ body {
   background-position: center;
 }
 
+#nombre {
+  color: goldenrod;
+}
+
 /* ---------------------- */
 
 @media all and (max-width: 1200px) {
