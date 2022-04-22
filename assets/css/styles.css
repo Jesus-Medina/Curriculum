@@ -22,6 +22,11 @@ body {
   }
 }
 
+@media all and (max-width: 850px) {
+  #about-me-description {
+    flex-wrap: wrap;
+  }
+}
 
 
 
