@@ -42,9 +42,20 @@ body {
 /* ---------------------- */
 
 
+/* SECCION DEL ABOUT ME */
+
+#about-me {
+  min-height: 110vh;
+}
+
+/* ------------------------- */
+
 @media (max-width: 1200px) {
   #about-me-description {
     flex-wrap: wrap;
+  }
+  #My-skills {
+    margin-top: 3rem;
   }
 }
 
