@@ -50,6 +50,38 @@ body {
 
 /* ------------------------- */
 
+/* SECCION DE SERVICIOS */
+
+#services {
+  min-height: 100vh;
+}
+
+/* -------------------------- */
+
+
+/* SECCION DEL PORTAFOLIO */
+
+#portafolio {
+  background-color: white;
+  min-height: 100vh;
+}
+
+.imagenes-portafolio {
+  width: 45rem;
+}
+
+#icono-github {
+  border-radius: 50%;
+}
+
+#icono-github:hover {
+  -webkit-box-shadow: 0px 0px 15px 5px #FFFFFF; 
+  box-shadow: 0px 0px 15px 5px #FFFFFF;
+  transition: 0.3s;
+}
+
+/* ---------------------------- */
+
 @media (max-width: 1200px) {
   #about-me-description {
     flex-wrap: wrap;
