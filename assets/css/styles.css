@@ -1,5 +1,11 @@
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* SECCION DE LA NAVBAR */
+
+#navegacion > a:hover {
+  color: goldenrod;
 }
 
 #navegacion a{
@@ -7,21 +13,89 @@ body {
   font-size: 1.4rem;
 }
 
-/* Hero Section */
+/* -------------------------- */
+
+
+/* SECCION DEL HOME */
 
 #home {
-  background-image: url("https://i.ibb.co/VYbyM41/bg.jpg");
+  background-image: url("https://i.ibb.co/ctF6vgk/inception3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
 }
 
-@media (max-width: 768px) {
-  .navbar-brand{
-    width: 200px;
+#presentacion h1 {
+  text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 0), 0 0 15px rgba(255, 255, 255, 0.685), 0 0 20px #ffe81864, 0 0 30px #000000, 0 0 40px #ff781880, 0 0 55px #ff18183a, 0 0 75px #000000;
+  color: #252525;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8vh;
+  font-weight: bolder;
+}
+
+#presentacion h2 {
+  text-shadow: 0 -1px 4px rgb(0, 0, 0), 0 -2px 100px rgb(0, 0, 0), 0 -10px 20px #000000, 0 -18px 40px rgb(0, 0, 0);
+  color: #ffffffc4;
+}
+
+/* ---------------------- */
+
+
+/* SECCION DEL ABOUT ME */
+
+#about-me {
+  min-height: 110vh;
+}
+
+/* ------------------------- */
+
+/* SECCION DE SERVICIOS */
+
+#services {
+  min-height: 100vh;
+}
+
+/* -------------------------- */
+
+
+/* SECCION DEL PORTAFOLIO */
+
+#portafolio {
+  background-color: white;
+  min-height: 100vh;
+}
+
+#icono-github {
+  border-radius: 50%;
+}
+
+#icono-github:hover {
+  -webkit-box-shadow: 0px 0px 15px 5px #FFFFFF; 
+  box-shadow: 0px 0px 15px 5px #FFFFFF;
+  transition: 0.3s;
+}
+
+/* ---------------------------- */
+
+
+/* SECCION DEL CONTACTO */
+
+
+/* ---------------------------- */
+
+@media (max-width: 1200px) {
+  #about-me-description {
+    flex-wrap: wrap;
+  }
+  #My-skills {
+    margin-top: 3rem;
   }
 }
 
-
-
+@media (max-width: 991px) {
+  #hi-im {
+    margin-top: 1em;
+  }
+}
 

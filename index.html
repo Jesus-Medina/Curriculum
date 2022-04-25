@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <!-- Font family -->
 
     <!-- Importamos el CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -17,132 +20,384 @@
     <script src="https://kit.fontawesome.com/6a730da3b9.js" crossorigin="anonymous"></script>
     <!-- Final Font awesome -->
 
+    <!-- Aqui va el icono del tab -->
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="/assets/img/favicon/android-icon-192x192.png"
+    />
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="96x96"
+    href="/assets/img/favicon/favicon-96x96.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png"> 
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Fin de icono del tab -->
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <title>Jesus Medina</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-75 fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="https://i.ibb.co/NCfqFyK/logo.png" class="logo">
+                <img src="https://i.ibb.co/PF2RBFy/Logotipo-500x500-px-8.png" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav navbar-nav ms-auto mb-2 mb-lg-0 fs-5" id="navegacion">
-                  <a class="nav-link" href="#">Mis Servicios</a>
-                  <a class="nav-link" href="#">Trabajos</a>
-                  <a class="nav-link" href="#">Contacto</a>
+              <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav navbar-nav ms-auto mb-2 mb-lg-0" id="navegacion">
+                  <a class="nav-link fw-bold fs-5" href="#home">Home</a>
+                  <a class="nav-link fw-bold fs-5" href="#about-me">About</a>
+                  <a class="nav-link fw-bold fs-5" href="#services">Services</a>
+                  <a class="nav-link fw-bold fs-5" href="#portafolio-link">Portafolio</a>
+                  <a class="nav-link fw-bold fs-5" href="#contact">Contact</a>
                 </div>
               </div>
         </div>
     </nav>
 
-    <header id="home" class="text-light text-center py-5 mt-5">
-        <div class="d-flex container justify-content-center">
-            <div class="col-12">
-                <img src="https://i.ibb.co/SNbKPJN/perfil.png" alt="" style="width: 17em; height: 17em; border-radius: 50%;">
-                <h2 class="display-5 fw bold">Hi! i'm</h2>
-                <h1 class="display-1 fw-bold">Jesus Medina</h1>
-                <h2 class="display-5 fw-bold">Junior Fullstack Developer</h2>
+    <header id="home" class="d-flex text-light text-center mt-0">
+        <div class="d-flex container align-items-center">
+            <div id="presentacion" class="d-flex col-12 justify-content-center align-items-center flex-wrap">
+                <img src="https://i.ibb.co/4VdsnGm/perfil.jpg" alt="" style="width: 16em; height: 16em; border-radius: 50%; opacity: 78%;">
+                <div class="m-2">
+                    <h2 id="hi-im" class="fw-bold mb-0">Hi! I'm</h2>
+                    <h1 class="m-3 mb-3">Jesus Medina</h1>
+                    <h2 class=" fs-1 fw-bold">Junior Fullstack Developer</h2>  
+                </div>
             </div>
         </div>
     </header>
 
 
-    <section id="about-me">
-        <div class="container  display-5 mt-5 ">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-12 col-xxl-6 bg-dark p-5 pb-0 text-white">
-                       <h2 class="fw-bold fs-1">About Me</h2>
+    <section id="about-me" class="d-flex mt-5 align-items-center">
+        <div class="container">   
+            <div id="about-me-description" class="d-flex container mb-5"> 
+                
+                <div class="container mb-3">
+                    <div class="row">
+                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-12 bg-dark p-5 text-white">
+                                <h2 class="fw-bold fs-1">About Me</h2>
+                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-12 bg-dark pb-0 text-white">
+                                <h2 class="fw-bold pt-5">I'm Jesus Medina Junior Fullstack Developer / OpenSource Enthusiast</h2>
+                                <p class="lh-lg fs-5 fw-light font-monospace mt-3"> 
+                                    I am a fullstack Javascript development student and a 
+                                    student of Civil Engineering in Computing, with experience 
+                                    in medium-level languages and systems based on Gnu/Linux. <br>
+                                </p>
+                                <p class="lh-lg fs-5 fw-light font-monospace mb-3">
+                                    I am always seeking to improve my skills and continue growing 
+                                    professionally in order to make valuable contributions at the 
+                                    working group I am part of. Therefore I use the modern development 
+                                    workflow with Git & Github in order to increase productivity and improve 
+                                    communication inside our development team.
+                                </p>
+                                <button type="button" class="d-flex btn btn-primary btn-lg mt-5 align-items-center "><a href="https://raw.githubusercontent.com/Jesus-Medina/Curriculum-JM/gh-pages/assets/docs/jesusCV.pdf" class="h3 text-decoration-none text-white m-0" target="_blank">Download CV </a><i class=" fa-solid fa-file-arrow-down fa-2x  ms-3"></i></button>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-6">
+                </div>    
+        
+            
+                <div id="My-skills" class="d-flex container justify-content-center align-items-center">
+                    <div class="row">
+                        <div class="col mb-5 ">
+                            <h2 class="fw-bold text-center display-6">My Skills</h2>
+                            <hr class="mt-3" width="80%" style="margin: auto;">
+                            <div class="row mt-2">
 
+                                <div class="col-xxl-4 col-xl-4 col-md-4 col-6  text-center mt-5">
+                                    <img src="https://img.icons8.com/color/120/000000/c-programming.png"/>
+                                    <h4 class="fw-bold fs-3" style="margin-top: 0.25em;">C lenguage</h4>  
+                                </div>
+
+                                <div class="col-xxl-4 col-xl-4 col-md-4 col-6  text-center mt-5 p-0">
+                                    <img src="https://img.icons8.com/color/120/000000/python--v1.png"/>
+                                    <h4 class="fw-bold fs-3 mb-0" style="margin-top: 0.25em;">Python</h4> 
+                                </div>
+
+                                <div class="col-xxl-4 col-xl-4 col-md-4 col-6 text-center mt-5">
+                                    <img src="https://img.icons8.com/color/120/000000/linux--v1.png" />
+                                    <h4 class="fw-bold fs-3" style="margin-top: 0.25em;">GNU/Linux</h4> 
+                                </div>
+                                
+                                <div class="col-xxl-4 col-xl-4 col-md-4 col-6 text-center mt-5">
+                                    <img src="https://img.icons8.com/color/120/000000/html-5--v1.png"/>
+                                    <h4 class="fw-bold fs-3" style="margin-top: 0.25em;">HTML</h4> 
+                                </div>
+
+                                <div class="col-xxl-4 col-xl-4 col-md-4 col-6 text-center mt-5">
+                                    <img src="https://img.icons8.com/color/120/000000/css3.png"/>
+                                    <h4 class="fw-bold fs-3" style="margin-top: 0.25em;">CSS</h4> 
+                                </div>
+
+                                <div class="col-xxl-4 col-xl-4 col-md-4 col-6 text-center mt-5">
+                                    <img src="https://img.icons8.com/color/120/000000/javascript--v1.png"/> 
+                                    <h4 class="fw-bold fs-3" style="margin-top: 0.25em;">JavaScript</h4> 
+                                </div>
+
+                                <div class="col-xxl-4 col-xl-4 col-md-4 col-6 text-center mt-5">
+                                    <i class="fa-brands fa-bootstrap fa-8x" style="color: #a700fb;"></i>
+                                    <h4 class="fw-bold fs-3" style="margin-top: 0.25em;">Bootstrap</h4> 
+                                </div>
+
+                                <div class="col-xxl-4 col-xl-4 col-md-4 col-6 text-center mt-5">
+                                    <i class="fa-brands fa-github fa-8x" style="color: black;"></i>
+                                    <h4 class="fw-bold fs-3" style="margin-top: 0.25em;">Github</h4>
+                                </div> 
+
+                                <div class="col-xxl-4 col-xl-4 col-md-4 col-12 text-center mt-5">
+                                    <i class="fa-brands fa-git-alt fa-8x" style="color: #f34f29;"></i>
+                                    <h4 class="fw-bold fs-3" style="margin-top: 0.25em;">Git</h4> 
+                                </div>
+                                                     
+                            </div>  
+                        </div>
                     </div>
-             </div>
+                </div>
+            </div>             
+        </div>
+    </section>
+
+    <section id="services" class="d-flex align-items-center justify-content-center bg-dark pt-5 pb-5">
+        <div>
+            <div class="container-fluid text-center text-light p-5">
+                <h2 class="display-3 fw-bold my-4">Services</h2>
+                <p class="my-4 h3 mb-0">
+                    I am a Developer of full-stack web applications which process, analyze, and render data visually. 
+                </p>
+                <div class="row pb-5">
+    
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 mt-5 p-4">
+                        <i class="fas fa-server fa-4x my-3"></i>
+                        <h3 class="my-3 fw-bold">Hosting & Maintenance</h3>
+                        <p class="my-3 fs-4">
+                            Our professional hosting and maintenance system will keep your projects always active and functional
+                        </p>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 mt-5 p-4">
+                        <i class="fa fa-user-lock fa-4x my-3"></i>
+                        <h3 class="my-3 fw-bold">Privacy & Security</h3>
+                        <p class="my-3 fs-4">
+                            Our main focus is your privacy and security. We will never share your data to third parties nor monitor your personal information.
+                        </p>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 mt-5 p-4">
+                        <i class="fas fa-mobile fa-4x my-3"></i>
+                        <h3 class="my-3 fw-bold">Mobile First Dev</h3>
+                        <p class="my-3 fs-4">
+                            Your site will display properly on any device, including desktop computers, tablets and mobile phones.
+                        </p>
+                    </div>
+    
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 mt-5 p-4">
+                        <i class="fa-solid fa-circle-nodes fa-4x my-3"></i>
+                        <h3 class="my-3 fw-bold">SEO</h3>
+                        <p class="my-3 fs-4">
+                            I will optimize your site with intelligent Search Engine Optimization strategy to generate leads. 
+                        </p>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 mt-5 p-4">
+                        <i class="fa-solid fa-object-group fa-4x my-3"></i>
+                        <h3 class="my-3 fw-bold">Creative Design</h3>
+                        <p class="my-3 fs-4">
+                            A good and attractive web design helps you keep your leads on your site, which is the digital face of your business. 
+                        </p>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 mt-5 p-4">
+                        <i class="fa-solid fa-code fa-4x my-3"></i>
+                        <h3 class="my-3 fw-bold">Development</h3>
+                        <p class="my-3 fs-4">
+                            I know the importance of web design and can help you create a website you'll love. 
+                        </p>
+                    </div>
+    
+                </div>
             </div>
         </div>
 
-        <div id="about-me-description" class="d-flex container"> 
+    </section>
 
-            <div class="container mb-3">
-                <div class="row">
-                    <div class="col bg-dark text-white p-5">
-                        <h2 class="fw-bold">I'm Jesus Medina Junior Fullstack Developer / OpenSource Enthusiast</h2>
-                        <p class="lh-lg fs-5 fw-light font-monospace mt-3"> 
-                            I am a Full Stack developer with experience building websites 
-                            and web applications. I specialize in JavaScript, and have
-                            professional experience working with React. <br>
-                        </p>
-                        <p class="lh-lg fs-5 fw-light font-monospace mb-3">
-                            I am always seeking to improve my skills and continue growing 
-                            professionally in order to make valuable contributions at the 
-                            working group I am part of. Therefore I use the modern development 
-                            workflow with CodeStream in order to increase productivity and improve 
-                            communication inside our development team.
-                        </p>
-                        <button type="button" class="d-flex btn btn-primary btn-lg mt-5 align-items-center"><a href="/assets/img/Jesus.pdf" class="h3 text-decoration-none text-white m-0" target="_blank">Download CV </a><i class=" fa-solid fa-file-arrow-down fa-2x  ms-3"></i></button>
-                    </div>
+    <div id="portafolio-link"></div>
+
+    <section id="portafolio">
+        <div class="container text-light mt-5">
+            <div class="row">
+                <div class="col text-black mb-4">
+                    <h2 class="display-3 mt-5 fw-bold">Portafolio</h2>
+                    <h3 class="display-6">Here you can see the projects I have worked on.</h3>
+                    <hr width="80%">
                 </div>
             </div>
 
-            <div class="d-flex container pt-5">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="fw-bold text-center fs-1">My Skills</h2>
-                        <div class="row mt-2">     
-
-                            <div class="col-6 col-xxl-4 text-center mt-5">
-                                <img src="https://img.icons8.com/color/120/000000/c-programming.png"/>
-                                <h4 style="margin-top: 0.25em;">C lenguage</h4>  
+            <div class="row">
+                <div class="d-flex col-xxl-7 col-xl-7 justify-content-center">
+                    <img id="imagenes-portafolio" class="mt-5 mb-2" src="https://i.ibb.co/TPV3y7y/software-compu.png" alt="" style="min-width: 50%;">
+                </div>
+                <div class="d-flex justify-content-center align-items-center col-xxl-5 col-xl-5">
+                    <div class="bg-dark p-4" style="width: 100%;">
+                        <h1>Software Development</h1>
+                        <hr size="2" width="85%">
+                        <h2>Tecnologias utilizadas</h2>
+                        <div class="container p-0">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <ul class="fs-3">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Git</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 justify-content-center align-items-center">
+                                    <a  href="https://github.com/Jesus-Medina/SOFTWARE-DEVELOPMENT" target="_blank"><img id="icono-github" src="https://i.ibb.co/dtY59bL/icons8-github-96.png"/></a>
+                                </div>
                             </div>
-
-                            <div id="card" class="col-6 col-xxl-4 text-center mt-5 p-0">
-                                <i class="fa-brands fa-html5 fa-6x" style="color: #e44d26;"></i>
-                                <i class="fa-brands fa-css3-alt fa-7x" style="color: #0170bf;"></i>
-                                <h4 style="margin-top: 1em;">HTML5 & CSS3</h4> 
-                            </div>
-
-                            <div class="col-6 col-xxl-4 text-center mt-5">
-                                <img src="https://img.icons8.com/color/120/000000/linux--v1.png" />
-                                <h4 style="margin-top: 0.25em;">GNU/Linux</h4> 
-                            </div>
-
-                            <div class="col-6 col-xxl-4 text-center mt-5">
-                                <i class="fa-brands fa-bootstrap fa-8x" style="color: #a700fb;"></i>
-                                <h4 style="margin-top: 0.25em;">Bootstrap</h4> 
-                            </div>
-
-                            <div class="col-6 col-xxl-4 text-center mt-5">
-                                <i class="fa-brands fa-github fa-8x" style="color: black;"></i>
-                                <h4 style="margin-top: 0.25em;">Github</h4>
-                            </div> 
-
-                            <div class="col-6 col-xxl-4 text-center mt-5">
-                                <i class="fa-brands fa-git-alt fa-8x" style="color: #f34f29;"></i>
-                                <h4 style="margin-top: 0.25em;">Git</h4> 
-                            </div>  
-                            
-                        </div>  
+                        </div>
                     </div>
                 </div>
+
+            </div>
+
+            <div class="row mt-5">
+                <div class="d-flex col-xxl-7 col-xl-7 justify-content-center">
+                    <img id="imagenes-portafolio" class="mt-5 mb-2" src="https://i.ibb.co/RS2bP8b/iguana-compu.png" alt="" style="min-width: 50%;">
+                </div>
+                <div class="d-flex justify-content-center align-items-center col-xxl-5 col-xl-5">
+                    <div class="bg-dark p-4" style="width: 100%;">
+                        <h1>Iguana Page</h1>
+                        <hr size="2" width="85%">
+                        <h2>Tecnologias utilizadas</h2>
+                        <div class="container p-0">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <ul class="fs-3">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Git</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 justify-content-center align-items-center">
+                                    <a  href="https://github.com/Jesus-Medina/IGUANA" target="_blank"><img id="icono-github" src="https://i.ibb.co/dtY59bL/icons8-github-96.png"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-5">
+                <div class="d-flex col-xxl-7 col-xl-7 justify-content-center">
+                    <img id="imagenes-portafolio" class="mt-5 mb-2" src="https://i.ibb.co/6v5v3JY/cuppon-compu.png" alt="" style="min-width: 50%;">
+                </div>
+                <div class="d-flex justify-content-center align-items-center col-xxl-5 col-xl-5">
+                    <div class="bg-dark p-4" style="width: 100%;">
+                        <h1>Cuppon</h1>
+                        <hr size="2" width="85%">
+                        <h2>Tecnologias utilizadas</h2>
+                        <div class="container p-0">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <ul class="fs-3">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Git</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 justify-content-center align-items-center">
+                                    <a  href="https://github.com/Jesus-Medina/CUPPON" target="_blank"><img id="icono-github" src="https://i.ibb.co/dtY59bL/icons8-github-96.png"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row mt-5 mb-5">
+                <div class="d-flex col-xxl-7 col-xl-7 justify-content-center">
+                    <img id="imagenes-portafolio" class="mt-5 mb-2" src="https://i.ibb.co/n01RRLd/Lovelace-compu.png" alt="" style="min-width: 50%;">
+                </div>
+                <div class="d-flex justify-content-center align-items-center col-xxl-5 col-xl-5">
+                    <div class="bg-dark p-4" style="width: 100%;">
+                        <h1>Lovelace's computing</h1>
+                        <hr size="2" width="85%">
+                        <h2>Tecnologias utilizadas</h2>
+                        <div class="container p-0">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <ul class="fs-3">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Git</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 justify-content-center align-items-center">
+                                    <a  href="https://github.com/Jesus-Medina/LOVELACE" target="_blank"><img id="icono-github" src="https://i.ibb.co/dtY59bL/icons8-github-96.png"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             
         </div>
     </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="display-6">Contact</h2>
+                </div>
+            </div>
+            <div class="list">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item"><a target="_blank" href="https://t.me/J_E_S_U_S_M"><img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/60/000000/external-telegram-messenger-privately-held-company-with-cloud-based-instant-messaging-logo-bold-tal-revivo.png"/></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://github.com/Jesus-Medina"><img src="https://img.icons8.com/ios-glyphs/76/000000/github.png"/></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="mailto:jesusmedinagajardo@gmail.com?Subject=¡Hola!%20quiero%20contratar%20tus%20servicios"><img src="https://img.icons8.com/ios-filled/68/000000/circled-envelope.png"/></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/jesus-gajardo-medina-17b1a2218/"><img src="https://img.icons8.com/ios-glyphs/78/000000/linkedin-circled--v1.png"/></a></li>
+                
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+          <hr>
+          <p class="text-center text-muted">Jesus Medina - 2022 </p>
+          <p class="text-center text-muted">El codigo fuente de esta página se distribuyen bajo licencia <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">GNU Affero General Public License</a></p>
+          <p class="text-center text-muted"><a target="_blank" class="text-decoration-none" href="https://github.com/Jesus-Medina/Curriculum"><img src="https://img.icons8.com/material-two-tone/24/000000/github.png"/> Source code</a> </p>
+        </footer>
+      </div>
     
 
     <!-- Importamos el Bootstrap -->
