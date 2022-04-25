@@ -1,4 +1,4 @@
-# Repositorio de git forkeado de fdsw-github prueba
+# Curriculum profesional 
 
 Link a la web https://jesus-medina.github.io/Curriculum/
 
