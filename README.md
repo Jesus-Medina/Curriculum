@@ -1,4 +1,4 @@
-# Curriculum profesional 
+# Curriculum profesional  
 
 Link a la web https://jesus-medina.github.io/Curriculum/
 
